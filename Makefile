@@ -17,7 +17,7 @@ $(BOILER_MYSQL): | $(BIN)
 
 .PHONY: gen/boiler
 gen/boiler: $(BOILER) $(BOILER_MYSQL)
-	cd $(BIN) && ./sqlboiler --no-tests --add-global-variants=false --wipe mysql -c $(CONFIG)/sqlboiler.toml -o $(DATABASE)/models
+	cd $(BIN) && ./sqlboiler --no-tests --add-global-variants=false --wipe mysql -c $(CONFIG)/sqlboiler.toml -o $(DATABASE)/boiler
 
 .PHONY: mod
 mod:
