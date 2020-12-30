@@ -1,0 +1,9 @@
+[mysql]
+  dbname = "orm"
+  host   = "localhost"
+  port   = 3306
+  user   = "u"
+  pass   = "pw"
+  sslmode= "false"
+  whitelist = []
+  blacklist = []
